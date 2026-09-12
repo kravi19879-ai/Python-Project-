@@ -1,0 +1,11 @@
+try:
+    with open("sample.txt", "r") as file:
+        print("Reading file content:")
+        for line in file:
+            print(line, end="")
+
+except FileNotFoundError:
+    print("Error: the file 'sample.txt' was not found.")
+
+except Exception as e:
+    print(f"An error occurred: {e}")

@@ -1,0 +1,8 @@
+def fact(num):
+    factorial=1
+    while num>1:
+        factorial=factorial*num
+        num=num-1
+    return factorial
+n=int(input("Enter a number: "))
+print(f"Factorial of {n} is: {fact(n)}")
